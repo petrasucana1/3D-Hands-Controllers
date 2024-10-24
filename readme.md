@@ -1,5 +1,3 @@
-A simple mini golf implementation using the OpenXR Toolkit in Unity.
+Hand presentation with Grabbing of a club and a special Trigger animation.
 
-It features 2 golf tracks, a hit counter and a score counter.
-
-Presentation: https://youtu.be/hQ-KtmdUNC8
+Presentation: https://youtu.be/LyXUaeYEIs0

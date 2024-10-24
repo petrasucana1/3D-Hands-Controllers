@@ -36,7 +36,7 @@
                     "name": "Toggle Manipulate Left",
                     "type": "Button",
                     "id": "847b79d9-a69b-4484-8688-a4bf40e58163",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -45,7 +45,7 @@
                     "name": "Toggle Manipulate Right",
                     "type": "Button",
                     "id": "241f6068-ebc8-4c6d-b747-8bc2c1f74f87",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -54,7 +54,7 @@
                     "name": "Toggle Manipulate Body",
                     "type": "Button",
                     "id": "c81093ea-c17e-4430-a3df-bccabef74af4",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -81,7 +81,7 @@
                     "name": "Manipulate Head",
                     "type": "Button",
                     "id": "f5febf74-651b-4f73-8d0a-08b0acdabc4d",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -99,7 +99,7 @@
                     "name": "Cycle Devices",
                     "type": "Button",
                     "id": "d728c6fb-4deb-4268-9110-d64c7861cd17",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -189,7 +189,7 @@
                     "name": "Reset",
                     "type": "Button",
                     "id": "339ccb79-aee9-4ba4-8864-3b6c81c199db",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false

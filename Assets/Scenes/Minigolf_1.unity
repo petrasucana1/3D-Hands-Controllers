@@ -785,6 +785,50 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2134526478}
   m_SourcePrefab: {fileID: 100100000, guid: 971518a78f9288749b4111495d3950dd, type: 3}
+--- !u!1 &120328751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 120328753}
+  - component: {fileID: 120328752}
+  m_Layer: 0
+  m_Name: TriggerListener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &120328752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120328751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c589c7c9d03d36a4fa9eff01a8a6d8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &120328753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120328751}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.447681, y: 3.01624, z: 8.31038}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &126131441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3999,8 +4043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b567073b002cd0a4f9191e7ed60635e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAngle: {x: 0, y: 0, z: 0}
-  flippedRotation: {x: 0, y: 0, z: 0}
+  rotationAngle: {x: 0, y: 270, z: 0}
 --- !u!1001 &1057708439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4410,8 +4453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b567073b002cd0a4f9191e7ed60635e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationAngle: {x: 0, y: 0, z: 0}
-  flippedRotation: {x: 0, y: 0, z: 0}
+  rotationAngle: {x: 0, y: 90, z: 0}
 --- !u!1 &1177097206
 GameObject:
   m_ObjectHideFlags: 0
@@ -10178,3 +10220,4 @@ SceneRoots:
   - {fileID: 709471285}
   - {fileID: 1825355598}
   - {fileID: 1980987230}
+  - {fileID: 120328753}

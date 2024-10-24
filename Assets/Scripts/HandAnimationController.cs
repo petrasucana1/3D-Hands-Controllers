@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
 public class HandGrabController : MonoBehaviour
 {
     private Animator AnimatorComponent { get; set; }
-    private XRRayInteractor parentInteractor;
+    private ActionBasedController parentController;
     private bool isGrabbing = false;
-    private List<IXRActivateInteractable> targets = new();
+    private float happyHandsCooldown = 3f;
+    private float timer = 3f;
 
     public Vector3 rotationAngle = Vector3.zero;
 
     private void Start()
     {
-        parentInteractor = transform.parent.gameObject.GetComponent<XRRayInteractor>();
+        parentController = transform.parent.gameObject.GetComponent<ActionBasedController>();
         AnimatorComponent = GetComponent<Animator>();
     }
 
@@ -39,15 +41,14 @@ public class HandGrabController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        targets.Clear();
-        parentInteractor.GetActivateTargets(targets);
-        foreach (var target in targets)
+        timer += Time.deltaTime;
+        if (!isGrabbing && timer >= happyHandsCooldown && parentController.activateAction.action.IsPressed())
         {
-            Debug.Log(target);
+            timer = 0f;
+            PerformHappyHands();
         }
-        
     }
 
     public void PerformHappyHands()
